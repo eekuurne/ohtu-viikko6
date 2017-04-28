@@ -1,0 +1,5 @@
+*.DS_Store
+*.tmp
+.gradle/
+/Laskin/.nb-gradle/
+/Laskin/build/
