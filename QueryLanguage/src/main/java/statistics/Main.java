@@ -12,14 +12,12 @@ public class Main {
         Matcher m1 = query.playsIn("PHI")
                 .hasAtLeast(10, "goals")
                 .hasFewerThan(20, "assists").build();
-
-        query = new QueryBuilder();
+        query.reset();
         
         Matcher m2 = query.playsIn("NYR")
                      .hasAtLeast(10, "goals")
                      .hasFewerThan(25, "assists").build();
-
-        query = new QueryBuilder();
+        query.reset();
         
         Matcher m = query.oneOf(m1, m2).build();
 

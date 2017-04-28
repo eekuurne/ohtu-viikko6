@@ -31,6 +31,10 @@ public class QueryBuilder {
         this.matcher = new Or(m1, m2);
         return this;
     }
+    
+    public void reset() {
+        this.matcher = new And();
+    }
 
     public Matcher build(){
         return matcher;
